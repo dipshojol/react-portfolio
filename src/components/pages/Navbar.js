@@ -3,33 +3,15 @@ import logo from '../../img/logo-s.png';
 // import { BrowserRouter as Link } from 'react-router-dom';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import * as Scroll from 'react-scroll';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller, handleSetActive } from 'react-scroll'
-
-// window.addEventListener('scroll', (event) => {// lodash debounce method.
-//     let scrollPositionY = window.pageYOffset;
-//     return <>{console.log(scrollPositionY)}</>;
-// });
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller, handleSetActive } from 'react-scroll'
+import Navlink from './Navlink';
 
 
-
-  
 const Navigation = () => {
 
     return (<>
         <nav>
-            <Link
-                activeClass="active"
-                to="home"
-                spy={true}
-                smooth={true}
-                hashSpy={true}
-                offset={0}
-                duration={500}
-                isDynamic={true}
-                //   onSetActive={this.handleSetActive}
-                //   onSetInactive={this.handleSetInactive}
-                ignoreCancelEvents={false}
-            >HOME</Link>
+            <Navlink target={'home'} />
             
             <Link activeClass="active"
                 to="about"

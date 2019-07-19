@@ -29,10 +29,10 @@ body{
                 border-left: 3px solid #ffb846;
             }
         }
-        header{
+        // header{
             // overflow: hidden;
             // height: 56px;
-            nav{
+            // nav{
                 // span.navbar-brand{
                 //     img{
                 //         height: 57px;
@@ -56,9 +56,9 @@ body{
                 //         }
                 //     }
                 // }
-            }
+            // }
 
-        }
+        // }
         main{
             .landing-page-container{
                 height: 100vh;
@@ -152,10 +152,10 @@ body{
                                 animation-iteration-count: infinite;
 
 
-                                span{
+                                // span{
                                     
 
-                                }
+                                // }
                             }
                         }
                     }
@@ -198,12 +198,12 @@ body{
                     }
                 }
 
-                p{
+                // p{
 
-                }
+                // }
             }
 
-            #myfooter, #contact, #projects, #myresume{   
+            #contact, #projects{   
                 // height: 100vh;
                 border: 5px solid white;
                 font-size: 1em;
