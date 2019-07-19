@@ -1,172 +1,138 @@
-@charset "UTF-8";
-/*----------------------------------------------------------
-  Inspired by/taken code where offered from:
-  Eric Meyer  :: http://meyerweb.com
-  HTML5 Doctor  :: http://html5doctor.com
-  and the HTML5 Boilerplate :: http://html5boilerplate.com
--------------------------------------------------------------------------------*/
-/* Reset everything...
--------------------------------------------------------------------------------*/
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 1em;
-  font-weight: inherit;
-  font-style: inherit;
-  vertical-align: baseline;
-  background: transparent; }
-
-main, article, aside, figure, footer, header, nav, section, details, summary, hgroup {
-  display: block; }
-
-html,
+@import url("https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Kanit&display=swap");
 body {
-  cursor: default; }
+  background: #ffb846;
+  max-width: 2560px;
+  margin: auto; }
+  body #root nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    color: #fff;
+    z-index: 10;
+    display: grid;
+    margin: 100px;
+    font-size: 2em;
+    background: #000; }
+    body #root nav a {
+      border-left: 30px solid; }
+    body #root nav > .active {
+      border-left: 3px solid #ffb846; }
+  body #root main .landing-page-container {
+    height: 100vh;
+    display: grid;
+    place-items: center; }
+    body #root main .landing-page-container .video-container {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden; }
+      body #root main .landing-page-container .video-container video {
+        min-width: 100%;
+        min-height: 100%; }
+    body #root main .landing-page-container .overlay-container {
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #000;
+      z-index: 1;
+      opacity: .65; }
+    body #root main .landing-page-container img.logo-main {
+      width: 40px;
+      border: 1px solid #939393;
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      z-index: 3; }
+    body #root main .landing-page-container .background-info-container {
+      z-index: 2;
+      font-family: 'Kanit', sans-serif;
+      width: 80vw;
+      display: grid; }
+      body #root main .landing-page-container .background-info-container .headshot-container {
+        -webkit-box-shadow: -1px 0px 63px 35px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 0px 63px 35px rgba(0, 0, 0, 0.75);
+        box-shadow: -1px 0px 63px 35px rgba(0, 0, 0, 0.75);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        justify-self: center; }
+      body #root main .landing-page-container .background-info-container .background-info {
+        display: grid;
+        justify-self: center;
+        color: white;
+        justify-items: center; }
+        body #root main .landing-page-container .background-info-container .background-info p {
+          font-size: 2em;
+          text-align: center;
+          padding: 40px 0; }
+          body #root main .landing-page-container .background-info-container .background-info p span {
+            font-size: 1.5em; }
+        body #root main .landing-page-container .background-info-container .background-info div button {
+          background: none;
+          border-radius: 5px;
+          padding: 0 80px;
+          font-size: 25px;
+          border: 1px solid;
+          width: 200px;
+          height: 50px;
+          position: relative;
+          animation-name: button-ani;
+          animation-duration: 10s;
+          animation-iteration-count: infinite; }
+  body #root main .about-me {
+    display: grid;
+    grid-template-columns: 19fr 1fr;
+    place-items: center;
+    background: #a8a8a8; }
+    body #root main .about-me div {
+      font-family: 'Slabo 27px', serif;
+      font-size: 2em;
+      padding: 150px;
+      text-align: center; }
+    body #root main .about-me aside {
+      font: bold 4em arial, sans-serif;
+      background: #ccc;
+      height: 100%;
+      width: 100%;
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden; }
+      body #root main .about-me aside h1 {
+        transform: rotate(90deg);
+        position: absolute;
+        background-color: #252525;
+        color: transparent;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text; }
+  body #root main #contact, body #root main #projects {
+    border: 5px solid white;
+    font-size: 1em; }
 
-/* Set all boxes to border boxes
-    http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-html {
-  box-sizing: border-box;
-  overflow-y: scroll;
-  /* force a vertical scrollbar to prevent a jumpy page */
-  height: 100%;
-  min-height: 100%; }
+@keyframes button-ani {
+  25% {
+    border-color: red;
+    color: red; }
+  50% {
+    border-color: lime;
+    color: lime; }
+  75% {
+    border-color: blue;
+    color: blue; } }
 
-*, *:before, *:after {
-  box-sizing: inherit; }
-
-/* Responsive images and other embedded objects */
-img, object, embed {
-  max-width: 100%;
-  height: auto; }
-
-/* Set all un-ordered lists to unbulletted */
-ul {
-  list-style: none; }
-
-ul.bullets, ol {
-  list-style: initial;
-  padding-left: 4em; }
-
-ul.bullets ul, ul ol, ol ol {
-  padding-left: 2em; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote.quotes, q.quotes {
-  quotes: "“" "”" "‘" "’"; }
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none; }
-
-blockquote.quotes:before,
-q.quotes:before {
-  content: open-quote; }
-
-blockquote.quotes:after,
-q.quotes:after {
-  content: close-quote; }
-
-a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent; }
-
-del {
-  text-decoration: line-through; }
-
-abbr[title], dfn[title] {
-  border-bottom: 0.0625em dotted #000;
-  cursor: help; }
-
-/* tables still need cellspacing="0" in the markup */
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-  font-size: inherit; }
-
-th {
-  font-weight: bold;
-  vertical-align: bottom; }
-
-td {
-  font-weight: normal;
-  vertical-align: top; }
-
-td, td img {
-  vertical-align: top; }
-
-hr {
-  display: block;
-  height: 0.0625em;
-  border: 0;
-  border-top: 0.0625em solid #ccc;
-  margin: 1em 0;
-  padding: 0; }
-
-input, select, img, button, textarea {
-  vertical-align: middle; }
-
-/*
-  pre {
-    white-space: pre;
-    white-space: pre-wrap;
-    white-space: pre-line;
-    word-wrap: break-word;
-  }*/
-small {
-  font-size: 0.85em; }
-
-strong, em {
-  font: inherit; }
-
-sub, sup {
-  font-size: 0.75em;
-  line-height: 0;
-  position: relative; }
-
-sup {
-  top: -0.5em; }
-
-sub {
-  bottom: -0.25em; }
-
-pre, code, kbd, samp, var {
-  font-family: monospace, sans-serif;
-  font-size: 0.8em;
-  cursor: text; }
-
-.clickable, a[href], label[for], input[type="button"], input[type="submit"], input[type="checkbox"], input[type="radio"], input[type="file"], button {
-  cursor: pointer; }
-
-input[type="radio"], input[type="checkbox"] {
-  margin-top: -0.35em; }
-
-select, input, textarea, button {
-  font: inherit;
-  padding: 0;
-  margin: 0; }
-
-button[disabled], input[disabled] {
-  cursor: default; }
-
-/* make buttons play nice in IE */
-button, input[type="button"], input[type="submit"] {
-  width: auto;
-  overflow: visible; }
-
-.clearfix:after {
-  content: " ";
-  display: block;
-  clear: both; }
-
-body {
-  background: #a1a1a1; }
+@media only screen and (max-width: 800px) {
+  body #root main .landing-page-container .background-info-container .background-info {
+    font-size: .65em; }
+  body #root main .about-me div {
+    padding: 50px; }
+  body #root main .about-me aside {
+    font-size: 2em; } }
