@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.a14e5c0d.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.1eed6de7.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.1eed6de7.chunk.js.map",
+    "runtime~main.js": "/react-portfolio/static/js/runtime~main.f974a8eb.js",
+    "runtime~main.js.map": "/react-portfolio/static/js/runtime~main.f974a8eb.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "/react-portfolio/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.34ad463a.chunk.js": "/react-portfolio/static/js/2.34ad463a.chunk.js",
+    "static/js/2.34ad463a.chunk.js.map": "/react-portfolio/static/js/2.34ad463a.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "precache-manifest.2d086da5d34ca8672ab69224eb2097cc.js": "/react-portfolio/precache-manifest.2d086da5d34ca8672ab69224eb2097cc.js",
+    "service-worker.js": "/react-portfolio/service-worker.js",
+    "static/css/2.22a7d4ef.chunk.css.map": "/react-portfolio/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.a14e5c0d.chunk.css.map": "/react-portfolio/static/css/main.a14e5c0d.chunk.css.map",
+    "static/media/3.jpg": "/react-portfolio/static/media/3.770df772.jpg",
+    "static/media/background01.webm": "/react-portfolio/static/media/background01.605b20b5.webm",
+    "static/media/discussionsApple.png": "/react-portfolio/static/media/discussionsApple.93ba41f2.png",
+    "static/media/movieDB.png": "/react-portfolio/static/media/movieDB.82bbaf73.png",
+    "static/media/react-color-palette.png": "/react-portfolio/static/media/react-color-palette.8bc27124.png",
+    "static/media/react-portfolio.png": "/react-portfolio/static/media/react-portfolio.b77be044.png",
+    "static/media/triabeauty.png": "/react-portfolio/static/media/triabeauty.68e25da8.png"
+  }
+}
