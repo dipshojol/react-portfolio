@@ -1,10 +1,8 @@
 import React from "react";
 import Navlink from './Navlink';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller, handleSetActive } from 'react-scroll'
+import resume from "../img/shojolsResume.pdf";
 
 const Navigation = () => {
-    console.log("hi", Link);
-
     return (<>
         <nav>
             <div></div>
@@ -13,8 +11,8 @@ const Navigation = () => {
                 <Navlink target={'projects'} />
                 <Navlink target={'skills'} />
                 <Navlink target={'education'} />
-                <Navlink target={'resume'} />
                 <Navlink target={'contact'} />
+                <a href ={resume} target="_blank" rel="noopener noreferrer" alt="">RESUME</a>
             </div>
         </nav>
     </>);

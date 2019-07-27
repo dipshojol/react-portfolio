@@ -2,15 +2,24 @@ import React from 'react';
 
 const Education = () => {
     return <>
-        <div className="about-me" id="education">
-        <div>
-                <p>In my work as a UI Designer I design and develop web pages graphics multimedia and GUIs. I collaborate well as an integral member of the development team while utilizing great written and verbal communication abilities. I have good knowledge of design using Adobe XD, Adobe Photoshop, and Adobe illustrator and development using HTML 5, CSS, and JavaScript technologies including ReactJS and AngularJS. My strong background with Web Development combined with my strong programming abilities make me a strong candidate.
-                        I am excited about the opportunity and I would be a solid choice for the mentioned position. I encourage you to review my resume attached below and to contact me by either email or on my cell phone.
-                    </p>
-            </div>
-            <aside>
-                <h1>Education</h1>
-            </aside>
+        <div className="container" id="education">
+        <div className="edu-container">
+            <div className="page-title"><p>EDUCATION</p></div>
+            <ul>
+                <li>
+                    <h1>WEB DESIGN AND DEVELOPMENT</h1>
+                    <p>2019</p>
+                    <h2>HUMBER COLLEGE</h2>
+                    <p>Toronto, ONTARIO</p>
+                    </li>
+                    <li>
+                        <h1>MASTERS IN COMPUTER SCIENCE</h1>
+                    <p>2015</p>                        
+                    <h2>NORTHWESTERN POLYTECHNIC UNIVERSITY</h2>
+                    <p>Fremont, CALIFORNIA</p>
+                    </li>
+            </ul>
+        </div>
         </div>
     </>
     ;

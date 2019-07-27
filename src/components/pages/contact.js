@@ -1,16 +1,39 @@
 import React from 'react';
+import email from '../../img/email.svg'
+import phone from '../../img/telephone.svg'
+import linkedin from '../../img/linkedin.svg'
+import { Footer } from '../';
+
+
 
 const Contact = () => {
     return <>
-        <div className="about-me" id="contact">
-        <div>
-                <p>In my work as a UI Designer I design and develop web pages graphics multimedia and GUIs. I collaborate well as an integral member of the development team while utilizing great written and verbal communication abilities. I have good knowledge of design using Adobe XD, Adobe Photoshop, and Adobe illustrator and development using HTML 5, CSS, and JavaScript technologies including ReactJS and AngularJS. My strong background with Web Development combined with my strong programming abilities make me a strong candidate.
-                        I am excited about the opportunity and I would be a solid choice for the mentioned position. I encourage you to review my resume attached below and to contact me by either email or on my cell phone.
-                    </p>
-            </div>
-            <aside>
-                <h1>CONTACT</h1>
-            </aside>
+        <div className="container" id="contact">
+        <div className="contact-container">
+            <div className="page-title"><p>CONTACT</p></div>
+            <ul>
+                    <li>
+                        <a alt="" href="mailto:dip_shojol@yahoo.com">
+                            <img src={email} alt="email"/><br />
+                            dip_shojol@yahoo.com
+                        </a>
+                    </li>
+                    <li>
+                    <a href="tel:3652287013">
+                    <img src={phone} alt="phone"/><br/>
+                            +1.365.228.7013
+                        </a></li>
+                    <li>
+                    <a href="https://www.linkedin.com/in/shojol-shake-899641123/" alt="">
+                    <img src={linkedin} alt="linkedin"/><br/>
+                            Linked In
+                        </a>
+                        </li>
+                </ul>
+        <Footer />
+
+                
+            </div>            
         </div>
     </>
     ;
