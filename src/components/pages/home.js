@@ -1,7 +1,8 @@
 import React from 'react';
 import Img from 'react-image';
-import bganimation from '../../img/background01.webm';
-import myPhoto from '../../img/3.jpg';
+import bgimg from '../../img/Aloha-Mundo.jpg';
+import bganimation from '../../img/Aloha-Mundo.webm';
+import myPhoto from '../../img/shojol.jpg';
 import logo from '../../img/logo-s.png';
 import { Link } from 'react-scroll'
 
@@ -12,16 +13,19 @@ const Home = () => {
       <div className="video-container">
         <video autoPlay loop muted>
           <source src={bganimation} />
-        </video>
+          </video>
+          <img src={bgimg} alt=""/>
       </div>
         
         <div className="overlay-container"></div>
         <img className="logo-main" src={logo} alt="logo"/>
         
         <div className="background-info-container">
-        <div className="headshot-container">
-          <Img src={myPhoto} alt="shojol" />
-        </div>
+          <span className="headshot-wrapper">
+            <div className="headshot-container">
+              <Img src={myPhoto} alt="shojol" />
+            </div>
+          </span>
         <div className="background-info">
             <p><span>Hello</span>, I'm <span> SHOJOL SHAKE </span>
             <br/>Web Developer living in Totonto, ON<br/>
