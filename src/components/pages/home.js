@@ -1,23 +1,22 @@
 import React from 'react';
 import Img from 'react-image';
-import bgimg from '../../img/Aloha-Mundo.jpg';
-import bganimation from '../../img/Aloha-Mundo.webm';
+import bgimg from '../../img/background1.jpg';
 import myPhoto from '../../img/shojol.jpg';
-import logo from '../../img/logo-s.png';
+import logo from '../../img/logo.png';
 import { Link } from 'react-scroll'
 
 const Home = () => {
   return (
   <div id="home">
     <div className="landing-page-container">
-      <div className="video-container">
-        <video autoPlay loop muted>
+      <div className="bg-container">
+        {/* <video autoPlay loop muted>
           <source src={bganimation} />
-          </video>
+          </video> */}
           <img src={bgimg} alt=""/>
       </div>
         
-        <div className="overlay-container"></div>
+        {/* <div className="overlay-container"></div> */}
         <img className="logo-main" src={logo} alt="logo"/>
         
         <div className="background-info-container">
@@ -29,7 +28,7 @@ const Home = () => {
         <div className="background-info">
             <p><span>Hello</span>, I'm <span> SHOJOL SHAKE </span>
             <br/>Web Developer living in Totonto, ON<br/>
-              I love to design and develop web application that<br/> <span>make a difference</span>.</p>
+              I love to design and develop web application that<br/> make a difference.</p>
             <div>
                 <Link
                   activeClass="active"

@@ -10,7 +10,7 @@ const Navlink = ({target}) => {
             spy={true}
             smooth={true}
             hashSpy={true}
-            offset={0}
+            offset={-100}
             duration={500}
             isDynamic={true}
             ignoreCancelEvents={false}

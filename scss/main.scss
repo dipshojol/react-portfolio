@@ -2,49 +2,39 @@
 @import url('https://fonts.googleapis.com/css?family=Barriecito&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Unica+One&display=swap');
 body{
-    // max-width: 2560px;
     margin: auto;
-    font-family: 'Blinker', sans-serif;
+    max-width: 1850px;
+    // margin: auto;
     #root{
         nav{
             position: fixed;
-            left: 0;
-            color: #157ffb;
-            z-index: 1;
+            left: 10px;
+            z-index: 4;
             display: grid;
             align-content: center;
             height: 100vh;
             grid-template-columns: 1fr 9fr;
-            font-family: 'Courier New', Courier, monospace;
-            a{
-                text-decoration: none;
-            }
 
             div{
                 a{
                     display: grid;
                     align-content: center;
-                    // height: 30px;
-                    // border-left: 10px solid transparent;
-                    // border-right: 1px solid transparent;
-                    // border-top: 1px solid transparent;
-                    // border-bottom: 1px solid transparent;
-                    padding-left: 10px;
-                    padding-right: 20px;
                     cursor: pointer;
-                    margin: 10px -12px;
-                    z-index: 2;
+                    margin: 10px 0;
+                    font-family: 'Courier New', Courier, monospace;
+                    text-decoration: none;
+                    color: #40a7db;
+                    font-size: 1.3em;
+                    text-decoration: transparent;
                 }
     
                 > .active{
-                    border-left: 10px solid #a4893d;
-                    // border-top: 1px solid #ff3a22;
-                    // border-right: 1px solid #ff3a22;
-                    // border-bottom: 1px solid #ff3a22;
-                    -webkit-transition: border 1s linear;
-                    -moz-transition: border 1s linear;
-                    -o-transition: border 1s linear;
-                    transition: border 1s linear;
+                    text-decoration: underline red;
+
+                    -webkit-transition: text-decoration 1s linear;
+                    -moz-transition: text-decoration 1s linear;
+                    -o-transition: text-decoration 1s linear;
+                    transition: text-decoration 1s linear;
                     color: #a4893d;
                 }
             }
@@ -53,13 +43,13 @@ body{
         main{
 
             .landing-page-container{
+                position: relative;
                 height: 100vh;
                 display: grid;
                 place-items: center;
-                // background-image: url("../img/markus.jpg");
+                background: #000000;
 
-
-                .video-container{
+                .bg-container{
                     position: absolute;
                     left: 0;
                     top: 0;
@@ -68,33 +58,30 @@ body{
                     overflow: hidden;
                     img{
                         height: 100%;
-                        /* width: auto; */  
                         max-width: inherit;
                     }
-                    video{
-                        // display: none;
-                        min-width: 100%;
-                        min-height: 100%;
-                    }
                 }
 
 
-                .overlay-container{
-                    height: 100vh;
-                    width: 100vw;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    background: #000000;
-                    z-index: 1;
-                    opacity: .5;
-                    color: #fff;
+                // .overlay-container{
+                //     max-width: 1300px;
+                //     height: 100vh;
+                //     width: 100vw;
+                //     position: absolute;
+                //     left: 0;
+                //     top: 0;
+                //     background: #616161;
+                //     z-index: 1;
+                //     opacity: 1;
+                //     color: #fff;
+                //     margin: auto;
+                //     display: none;
 
-                }
+                // }
 
                 img.logo-main{
                     width: 40px;
-                    border: 1px solid rgb(147, 147, 147);
+                    border: 1px solid rgb(77, 77, 77);
                     position: absolute;
                     top: 40px;
                     right: 40px;
@@ -104,12 +91,11 @@ body{
                 .background-info-container{
                     z-index: 2;
                     font-family: 'Unica One', cursive;
-                    width: 80vw;
                     display: grid;
 
                     span.headshot-wrapper{
                         justify-self: center;
-                        border: 1px solid #6288b4;
+                        border: 5px solid #585858;
                         border-radius: 50%;
                         padding: 20px;
 
@@ -126,7 +112,6 @@ body{
                         display: grid;
                         justify-self: center;
                         color: #999999;
-                        // font-size: 3em;
                         justify-items: center;
 
                         p{
@@ -162,7 +147,7 @@ body{
                     text-align: center;
                     font-size: 2em;
                     padding: 40px 0 0;
-                    color: rgb(153, 153, 153);
+                    color: #999;
                     width: fit-content;
                     margin: auto;
 
@@ -197,6 +182,8 @@ body{
                             }
 
                             span{
+                                font-family: 'Blinker', sans-serif;
+
                                 &:nth-child(2){
                                     display: grid;
                                     place-content: center;
@@ -238,7 +225,7 @@ body{
                         border-bottom: 1px solid #8ec1fc;
                         font-size: 1.6em;
                         display: grid;
-                        // font-family: 'Blinker', sans-serif;
+                        font-family: 'Blinker', sans-serif;
                         align-content: center;
                         padding-left: 30px;
                     }
@@ -268,6 +255,8 @@ body{
                     padding: 30px 0;
 
                     li{
+                        font-family: 'Blinker', sans-serif;
+
                         -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
                         -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
                         box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -294,13 +283,13 @@ body{
 
             .contact-container{
                 height: 100vh;
-                font-family: 'Blinker', sans-serif;
 
                 .page-title{
                     padding-bottom: 80px;
                 }
 
                 ul{
+                    font-family: 'Blinker', sans-serif;
                     display: grid;
                     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
                     place-content: center;
